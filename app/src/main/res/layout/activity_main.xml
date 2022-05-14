@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/AJ"
+            android:hint="Enter the name of the Reserver"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/No."
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter Reserver's Mobile Number"
+            android:textColorHint="@color/black"
+            android:background="@color/AJ"/>
+
+        <DatePicker
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:background="@color/purple_200"/>
+
+        <TimePicker
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:timePickerMode="spinner"
+            android:background="@color/purple_200"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/smoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do you need a reservation in the Smoking Area?"
+                android:background="@color/AJ"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nopicker"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="5"
+                android:hint="Enter the No. of people"
+                android:backgroundTint="@color/AJ" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Clear form"/>
+
+        <Button
+            android:id="@+id/Set"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Confirm Form"/>
+
+        <TextView
+            android:id="@+id/response1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/response2"
+            android:text=" "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/responsedate"
+            android:text=" "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/responsetime"
+            android:text=" "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/smokin"
+            android:text=" "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/people"
+            android:text=" "/>
+
+    </LinearLayout>
+
+
+</ScrollView>
